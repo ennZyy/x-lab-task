@@ -16,8 +16,30 @@ $app->addErrorMiddleware(true, true, true);
 
 $database = new Database();
 
+
 $app->get('/', function (Request $request, Response $response) {
-    $response->getBody()->write("Hello, user");
+    include_once __DIR__ . "/../template/home.php";
+    return $response;
+});
+
+$app->get('/login', function (Request $request, Response $response) {
+    return $response;
+});
+
+$app->post('/login-process', function (Request $request, Response $response) {
+    return $response;
+});
+
+$app->get('/logout', function (Request $request, Response $response) {
+    return $response;
+});
+
+$app->get('/register', function (Request $request, Response $response) {
+    include_once __DIR__ . "/../template/register.php";
+    return $response;
+});
+
+$app->post('/register-process', function (Request $request, Response $response) {
     return $response;
 });
 
