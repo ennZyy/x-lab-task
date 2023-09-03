@@ -1,0 +1,17 @@
+{
+    "name": "denis/x-lab-task",
+    "description": "Test task by X-lab company.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Denis",
+            "email": "laing20012@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "^4.12",
+        "slim/psr7": "^1.6",
+        "ext-pdo": "*"
+    }
+}
