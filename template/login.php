@@ -11,6 +11,9 @@
 <body>
 <div class="form-container">
     <h1>Login Form</h1>
+    <?php if (!empty($message)): ?>
+        <p class="message-error <?php if (!empty($message)): ?>active<?php endif;?>"><?= $message ?></p>
+    <?php endif; ?>
     <form method="post" action="/login-process" class="form">
         <input type="text" name="username" placeholder="Enter your name">
         <input type="text" name="password" placeholder="Enter you password">

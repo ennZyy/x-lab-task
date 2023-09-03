@@ -6,11 +6,11 @@
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'reference' => NULL,
-        'name' => 'denis/x-lab-task',
+        'name' => 'denis/test-task-x-lab-test',
         'dev' => true,
     ),
     'versions' => array(
-        'denis/x-lab-task' => array(
+        'denis/test-task-x-lab-test' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'type' => 'project',
